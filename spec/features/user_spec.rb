@@ -14,5 +14,9 @@ feature "User management" do
     expect(User.last.email).to eq('user@example.com')
 
     # Verify that on the next page we're actually logged in
+    expect(page.has_content?('Log out')).to eq(true)
+    click_link 'Log out'
+    expect(page.has_content?('Log in')).to eq(true)
   end
+
 end

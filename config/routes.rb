@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   resources :songs, only: [:index]
   resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :destroy]
 
   # Example resource route with options:
   #   resources :products do
