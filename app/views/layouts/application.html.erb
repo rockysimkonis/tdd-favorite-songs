@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <nav class="links">
+    <li><a href="users/new">Register</a></li>
+    <li><a href="sessions/new">Log in</a></li>
+    <li><a href="sessions/destroy">Log out</a></li>
+    <li>Some username</li>
+  </nav>
 <%= yield %>
 
 </body>
